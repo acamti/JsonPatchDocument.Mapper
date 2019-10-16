@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Json.Extensions\Json.Extensions.csproj" />
+    <ProjectReference Include="..\JsonPatchDocument.Mapper\JsonPatchDocument.Mapper.csproj" />
   </ItemGroup>
 
 </Project>
