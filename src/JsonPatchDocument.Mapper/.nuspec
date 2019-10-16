@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Acamti.JsonPatchDocument.Mapper</id>
+    <version>1.0.0</version>
+    <title>Acamti.JsonPatchDocument.Mapper</title>
+    <authors>Manel Mayer</authors>
+    <owners>ACAM Services et Conseils TI</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/acamti/JsonPatchDocument.Mapper/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://www.nuget.org/packages/Acamti.JsonPatchDocument.Mapper/</projectUrl>
+    <description>Provides mapping capability to map a JsonPatchDocument from one type to another</description>
+    <copyright>ACAM Services et Conseils TI</copyright>
+    <tags>Json, JsonPatchDocument, Operation, Mapper, Automapper</tags>
+    <repository type="git" url="https://github.com/acamti/JsonPatchDocument.Mapper" />
+    <dependencies>
+      <dependency id="Microsoft.AspNetCore.JsonPatch" Version="3.0.0" />
+      <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0" />
+    </dependencies>
+  </metadata>
+</package>
