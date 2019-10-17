@@ -14,8 +14,8 @@
     <tags>Json, JsonPatchDocument, Operation, Mapper, Automapper</tags>
     <repository type="git" url="https://github.com/acamti/JsonPatchDocument.Mapper" />
     <dependencies>
-      <dependency id="Microsoft.AspNetCore.JsonPatch" Version="3.0.0" />
-      <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0" />
+      <dependency id="Microsoft.AspNetCore.JsonPatch" version="3.0.0" />
+      <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="3.0.0" />
     </dependencies>
   </metadata>
 </package>
