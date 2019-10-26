@@ -49,12 +49,12 @@ namespace Acamti.JsonPatchDocument.Mapper
 
         public void AddRule<TSourceProp, TTargetProp>(Expression<Func<TSource, TSourceProp>> sourceProp, Expression<Func<TDest, TTargetProp>> targetProp)
         {
-            _mappingRules.Add(GetPath(sourceProp), GetPath(targetProp));
+            _mappingRules.Add(GetPath(sourceProp).ToLowerInvariant(), GetPath(targetProp));
         }
 
         private string GetTargetMappingPath(string sourcePath)
         {
-            if (_mappingRules.TryGetValue(sourcePath, out var result))
+            if (_mappingRules.TryGetValue(sourcePath.ToLowerInvariant(), out var result))
             {
                 return result;
             }
@@ -64,7 +64,7 @@ namespace Acamti.JsonPatchDocument.Mapper
 
         private bool NeedsToBeMap(string path)
         {
-            return _mappingRules.ContainsKey(path);
+            return _mappingRules.ContainsKey(path.ToLowerInvariant());
         }
 
         private string GetPath<TModel, TProp>(Expression<Func<TModel, TProp>> expr)
@@ -120,7 +120,7 @@ namespace Acamti.JsonPatchDocument.Mapper
             var jsonObjectContract = contractResolver.ResolveContract(memberExpression.Expression.Type) as JsonObjectContract;
 
             return jsonObjectContract?.Properties
-                .First(jsonProperty => jsonProperty.UnderlyingName == memberExpression.Member.Name).PropertyName;
+                .First(jsonProperty => string.Equals(jsonProperty.UnderlyingName, memberExpression.Member.Name, StringComparison.InvariantCultureIgnoreCase)).PropertyName;
         }
 
         private static string EvaluateExpression(Expression expression)
