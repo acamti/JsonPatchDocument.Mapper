@@ -1,5 +1,11 @@
 # Json.Extensions
 Provides mapping capability to map a JsonPatchDocument from one type to another
+
+[![Build Status](https://dev.azure.com/acamti/OpenSource/_apis/build/status/Nugets/Nuget-JsonPatchDocment.Mapper?branchName=master)](https://dev.azure.com/acamti/OpenSource/_build/latest?definitionId=2&branchName=master)
+
+`JsonPatchDocument.Mapper` [![NuGet](https://img.shields.io/nuget/v/Acamti.JsonPatchDocument.Mapper.svg)](https://nuget.org/packages/Acamti.JsonPatchDocument.Mapper) [![Nuget](https://img.shields.io/nuget/dt/Acamti.JsonPatchDocument.Mapper.svg)](https://nuget.org/packages/Acamti.JsonPatchDocument.Mapper)
+
+
 ## Usage
 
 ### Schema Mapper Definition 
